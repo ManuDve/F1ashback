@@ -1,0 +1,183 @@
+/* --- Generales --- */
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root {
+    --black: #131313;
+    --red: #e4001e;
+    --white: #f1f1f1;
+}
+
+body {
+    margin: 1em 2em;
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 0.65rem;
+    transition: 500ms;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Bebas Neue', cursive; 
+}
+
+/* Dark and Light */
+
+.dark {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.light {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+.light nav img {
+    filter: invert(100%);
+}
+
+.light #summary #slider>div {
+    border-bottom: 2px solid var(--black);
+}
+
+.light #summary #slider .currentslide {
+    border-bottom: 2px solid var(--red);
+}
+
+/* Header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logosmall {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2rem;
+}
+
+.red {
+    color: var(--red);
+}
+
+#colormodes ul {
+    display: flex;
+    justify-content: end;
+    gap: 1em;
+}
+
+/* Nav */
+
+nav {
+    margin: 2em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    max-height: 20px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    font-weight: 300;
+    gap: 1em;
+}
+
+nav ul li:hover {
+    opacity: 0.8;
+}
+
+/* --- Main --- */
+
+/* Descripcion */
+
+#summary {
+    margin: 6em 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+    row-gap: 4em;
+}
+
+#summary .date {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    font-size: 5rem;
+    color: var(--red);
+    letter-spacing: 2px;
+    line-height: 0.5;
+}
+
+
+/* Foto Principal */
+
+#mainpic {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+#mainpic figcaption {
+    opacity: 0.5;
+}
+
+#slider {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0.4em;
+}
+
+#slider>div {
+    border-bottom: 2px solid var(--white);
+}
+
+#slider .currentslide {
+    border-bottom: 2px solid var(--red);
+}
+
+/* Listado */
+
+#mainlist {
+    margin: 3em 0; 
+    display: grid;
+    grid-template-columns: 1fr 1fr 3fr;
+    text-transform: uppercase;
+}
+
+#mainlist .pilotcaption {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 0.5em;
+}
+
+#mainlist h2 {
+    font-size: 3rem;
+    font-family: 'Roboto Flex', sans-serif;
+    line-height: 0.9;
+}
+
+#mainlist .pilotposition {
+    font-size: 8rem;
+    line-height: 0.65;
+}
+
+
+

@@ -4,5 +4,14 @@ function toggleDarkLight() {
     body.className = currentClass == "light" ? "dark" : "light";
   }
 
+  function toggleTogglerImg() {
+    let toggleImg = document.querySelector("#colormodes");
+    let currentImg = toggleImg.className;
+    toggleImg.className = currentImg == "light-img" ? "dark-img" : "light-img";
+  }
+
   let toggler = document.querySelector('#colormodes');
-  toggler.addEventListener('click', toggleDarkLight );
+  toggler.addEventListener('click', () => {
+    toggleDarkLight();
+    toggleTogglerImg();
+  } );

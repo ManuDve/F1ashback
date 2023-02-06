@@ -9,7 +9,7 @@
 
 :root {
     --black: #131313;
-    --red: #e4001e;
+    --red: hsl(352, 100%, 45%);
     --white: #f1f1f1;
 }
 
@@ -75,6 +75,22 @@ header {
     justify-content: end;
     gap: 1em;
 }
+
+.dark-img {
+    height: 30px;
+    width: 30px;
+    background: url(../img/moon-sq.svg) no-repeat;
+    background-size: contain;
+}
+
+
+.light-img {
+    height: 30px;
+    width: 30px;
+    background: url(../img/sun-sq.svg) no-repeat;
+    background-size: contain;
+}
+
 
 /* Nav */
 
